@@ -1,0 +1,125 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{T1}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2018-09-04}  %Datum, form YYYY-MM-DD
+\tid{18:12}{19:47}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{August Eriksson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Erik Vikström}{Medlem} 		% Justerare A      | titel
+\justB{Fredrik Pettersson}{Kassör} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Frida Mikkilä}{Vice ordförande}
+\person{Fredrik Pettersson}{Kassör}
+\person{Edvin Åkerström}{Ledamot}
+\person{Anton Johansson}{Ledamot}
+\person{Oscar Brink}{Medlem}
+
+
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut med dom tillagda punkterna Utse ansvariga för städning av olika delar av lokal och Brist på sittplatser i lokal.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+\subpunkt{Koldioxidsensor}
+Fredrik framför att han och Emil Kitti har diskuterat pris på koldioxidsensorer sedan senaste mötet och att dessa inte nödvändigtvis är särskilt dyra. 
+Mötet kollar upp pris på koldioxidsensorer på internet.
+\begin{beslut}
+    \att avsätta 500kr för inköp av koldioxidsensor, mikrokontroller och nödvändiga tillbehör.
+\end{beslut}
+Emil Kitti ankommer 18:19 till mötet.
+Edvin tar på sig ansvaret för att det blir inköpt och programmerat för. 
+
+\punkt{Fullständig utvärdering av Nolleperioden}
+Öppet hus fungerade okej, dock var grupperna för stora och de kom också huller om buller samtidigt fanns det för lite tid för aktiviteterna. Datasektionen har informerats om detta och spånar på lösningar. 
+
+Signups har ökat. Cirka 64 nya Luddare under Nolleperioden jämfört med förra årets 53.
+
+\punkt{Uppdaterinar av pågående projekt}
+% Vad har föreningen gjort med pågående projekt?
+\subpunkt{LEDs i korridor}
+Inget att nämna.
+
+\subpunkt{Profilering}
+Adam Sahlin har kontaktats av Jens angående design för Luddbanner.
+
+\subpunkt{Ny statisk webbsida}
+Inget att nämna. 
+
+\subpunkt{Målning av logga vid bron}
+Målandet av Vicke gick bra i det första steget, 
+
+\subpunkt{Byggprojekt i lokal}
+Johan Jatko har informerat August att han ska avlägga tid för planering av trappa och bardisk mot slutet av september.
+
+\subpunkt{Övriga projekt}
+Inga övriga projekt.
+
+\punkt{Införande av ordningsregler för LUDDs projektor och ljudsystem}
+% Skriv det som är relevant kring punkten.
+Klagomål har framförts gällande volymen från projektorhörnan under studietider. Föreslag på tillägg till ordningsregler för projektorn och Ludds ljudssystem framförs: 
+Volym måste vara avstängd för allt bortsett från musik som ej av medlemmar upplevs störande under tiderna 8.15-16.15 vardagar. 
+På programmeringsstuger får projektorn endsdast användas för utbildningssyfte.
+
+\begin{beslut}
+    \att lägga till ovannämnda regler till Ludds regelsamling under punkten §4.4.4 Projektor
+\end{beslut}
+
+\punkt{Kontakt med Valvet gällande skylt}
+Frida har haft kontakt med Filip Kjellberg som är representant för Valvet.
+
+\punkt{Ny huvudsystemansvarig}
+Då Marcus Lund har avgått från sin post som Huvudsystemansvarig behöver en ny väljas. 
+\begin{beslut}
+    \att välja Emil Kitti till ny Huvudsystemansvarig.
+\end{beslut}
+
+\punkt{Utse ansvariga för städning av olika delar av lokal}
+Ludd delas upp i 7 sektioner för städning och maintentance och allokeras till styrelsemedlemmarna. 
+\begin{list}
+    \entry[Kitti] Serverhall 
+    \entry[Jens] Labbhörna
+    \entry[Frida] Parkettgolv och Korridor
+    \entry[Plattform] Fredrik
+    \entry[August] Bosch
+    \entry[Anton] Diskställ och Kaffemaskin
+    \entry[Edvin] Soffgrupp och Pantsoptunnan
+\end{list}
+
+\punkt{Brist på sittplatser i lokal}
+Det är brist på sittplatser, styrelsen ska städa borden vid skrivarna för att få mer ledig plats.
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+Inga övriga frågor.
+
+\end{document}
