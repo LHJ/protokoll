@@ -1,0 +1,78 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{SRT:s konferansrum}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2018-04-04}  %Datum, form YYYY-MM-DD
+\tid{18:20}{18:56}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{Gustaf Elf Andersson} 	            % Föreningsordförande
+\ordf{Gustaf Elf Andersson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}[Ledamot] 		% Mötessekreterare | (titel)
+\justA{Edvin Åkerström}{Medlem} 		% Justerare A      | titel
+\justB{Frida Mikkilä}{Medlem} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Emil Kitti}{Huvudsystemansvarig}
+\person{John Elfberg Larsson}{Sekreterare}
+\person{Erik Viklund}{Ledamot}
+\person{Anton Johansson}{Medlem}
+\person{Fredrik Petterson}{Medlem}
+\person{August Eriksson}{Medlem}
+\person{Marcus Lund}{Root}
+\adjung{Axel Lund} % Adjungerad person
+%\adjung{asd} % Nästa adjungerade person
+%\adjung{potat}
+%\adjung{Mitt Liv}
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastlå den utskickade dagordningen med undantag av de två punkterna ''Bordlagda ärenden'' och ''Pågående projekt''.
+\end{beslut}
+
+\punkt{Workshop}
+Det öppnas för diskussion kring vilka som kan och bör närvara på morgondagens PR-Workshop, cirka hälften av närvarande verkar kunna komma.
+Fredrik Pettersson och Frida Mikkilä bedöms av mötet vara mest lämpliga för att hålla i och vara ansvariga för utförandet av workshoppen.  
+
+Flera av de närvarande påpekar att det är ironiskt att marknadsföringen för PR-Workshoppen har varit så dålig att det fortfarande inte har skickats ut info när det är mindre än ett dygn kvar tills den ska ta plats.  
+
+Diskussion kring huruvida någon utöver nuvarande och blivande styrelsen kommer medverka, och om detta skulle berättiga en datumändring i hopp om att det sköts bättre, bryter ut. Detta bedöms inte vara något faktiskt problem då den praktiska skillnaden blir att det är färre grupper och eventuellt färre ideér som framförs.
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+\subpunkt{Minikurs under \O -P}
+Frida tar upp att under Nolleperioden har LUDD inget eget event och därmed ingen egen direkt marknadsföring till nollorna, då spelkvällen är delad med BGD. Vi vill visa att vi har en egen image och är en egen förening.  
+
+Frida framför idén att LUDD skulle hålla i en krashkurs i att skriva rapporter, då det är ganska annorlunda från gymnasiet, under vilken de får lära sig hur man skriver en bra och korrekt rapport på universitetesnivå. Eventuellt skulle LUDD kunna ta kontakt med några lärare som också kan ge insikt i vad de har som kritik på rapporter. 
+
+Enligt Frida är krav på rapporterna för de som studerar under LS ofta högre än för de som studerar under TKL, Frida vill därför ha en mall att visa upp från just LS så man kan få se hur det ska se ut.  
+Diskussion kring tidsbristen under Nolleperioden bryter ut. Det påpekas att väldigt få, om några alls, kommer gå på en rapportskrivningskurs under alkoholhetsen och pressen för att hinna med alla event som är under Nolleperioden. Det bestäms att det är mer lämpligt att LUDD skulle göra reklam för den under Nolleperioden och sedan hålla den strax efter Nolleperioden. Anton Johansson och Edvin Åkerström nämner att man borde göra reklam för det i nollehäftet och Frida påpekar att detta bör bestämmas väldigt snabbt då häftet snart ska ut till tryck.  
+
+John Elfberg Larsson kan tänka sig att hålla i den om ingen annan hittas. 
+Det nämns också att det inte är helt säkert att LUDD kommer kunna hålla i någon sådan kurs då det inte finns någon garanti att kontakt med professorer kommer kunna etableras i tid. 
+Cheat-sheets för \LaTeX och liknande skulle vara väldigt användbart då det skulle bli lättare för folk som aldrig har använt det tidigare.  
+\subpunkt{Banner}
+Gustaf Elf Andersson undrar om vi ska skaffa en banner då vi inte syntes så bra under spelkvällen, trots att hela plattformen var LUDDs. Frågor kring kostnad inkommer. 
+Marcus Lund berättar att Netrounds' banner, som hänger på LUDD, inte var särskilt dyr. 
+Styrelsen ska ta fram prisförslag samt kontakta medlemmen Adam Sahlin för att se om han kan tänka sig designa den.
+
+\end{document}
