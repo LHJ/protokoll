@@ -1,0 +1,95 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{T1}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2018-09-25}  %Datum, form YYYY-MM-DD
+\tid{18:03}{19:05}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{August Eriksson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Anton Johansson}{Ledamot} 		% Justerare A      | titel
+\justB{Edvin Åkerström}{Ledamot} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Frida Mikkilä}{Vice Ordförande}
+\person{Fredrik Pettersson}{Kassör}
+\person{Emil Kitti}{Huvudsystemansvarig}
+\person{Lisa Jonsson}{Valberedning}
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+\subpunkt{Inköp av stativ för VR}
+Behovet av stativ bedöms inte vara signifikant nog för att rättfärdiga inköp. 
+
+\punkt{Uppdateringar av pågående projekt}
+% Vad har föreningen gjort med pågående projekt?
+\subpunkt{LEDs i korridor}
+Exakt vilka nätaggregat och modeller på LEDs som ska köpas in har inte bestämts. Anton bestäms vara ansvarig för inköp.
+
+\subpunkt{LED-skylt}
+LED-skylten utanför LUDD hade rivits ner under Valvets fest under fredagen den 21:a september. Den behöver limmas iordning innan den kan hängas upp igen.
+
+\subpunkt{Design av banner till LUDD}
+Fredrik har skissat upp ett antal exempeldesigner. Mötet diskuterar fortsatt utveckling på dessa designer. Fredrik tar på sig att färdigutveckla ett koncept till nästa styrelsemöte.
+
+\subpunkt{Ny statisk webbsida}
+Emil och Fredrik påstår att de kanske har en idé tills nästa möte.
+
+\subpunkt{Design av LUDD-tröjor}
+Edvin har inte tagit fram några designförslag, Lisa tar på sig att färdigställa en design om hon får en grunddesign senare. Huvtröjor med dragkedja är najs.
+
+\subpunkt{Övriga projekt}
+\subsubsection{Koldioxidsensor}
+Ingen koldioxidsensor har köpts in, detta skall göras innan dagens slut.
+
+\punkt{Planering inför CCLan}
+% Skriv det som är relevant kring punkten.
+Vem som bör vara on-site ansvarig för CCLan 2019 diskuteras. 
+TAFS i Skellefteå var medverkande under CCLan 2018 och har kontaktats, universitet i Umeå och Piteå har också kontaktats och verkar intresserade. 
+Eventuell expandering till fler universitet och föreningar och de organiseringsproblem som det skulle innebära diskuteras. Det bedöms vara fullt möjligt att involvera fler campus under antagande att tider och hierarkier blir striktare. 
+Jens tar preliminärt på sig positionen som CCLan ansvarig. %y'all bedöm mening
+
+\punkt{Medlemsmöte}
+Första medlemsmötet bestäms preliminärt hållas 18:e oktober, den senast möjliga torsdagen innan tentaperioden.
+
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+\subpunkt{Tacophesten}
+Planering inför Tacophesten bedöms börja snarast då helger kommer börja bli uppbokade inom kort och specifika medverkande behöver kontaktas i förväg.
+Preliminärt sätts datum kring månadsskiftet november-december.
+\begin{itemize}
+	\item Frida tar på sig ansvaret att kontakta Jonas "blondie" Sundén. 
+	\item August tar på sig ansvaret att boka A-torget på ett lämpligt datum. 
+	\item Fredrik tar på sig ansvaret att kontakta D6.
+\end{itemize}
+
+\end{document}
