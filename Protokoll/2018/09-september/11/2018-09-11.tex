@@ -1,0 +1,93 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{T1}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2018-09-11}  %Datum, form YYYY-MM-DD
+\tid{18:01}{18:41}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{August Eriksson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Anton Johansson}{Ledamot} 		% Justerare A      | titel
+\justB{Edvin Åkerström}{Ledamot} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Frida Mikkelä}{Vice Ordförande}
+\person{Fredrik Pettersson}{Kassör}
+%\person{Emil Kitti}{Huvudsystemansvarig}
+%\person{Anton Johansson}{Ledamot}
+%\person{Edvin Åkerström}{Ledamot}
+\person{Erik Viklund}{Medlem}
+\person{Oscar Brink}{Medlem}
+
+
+
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+Inga bordlagda ärenden.
+
+\punkt{Medverkan i NCPC}
+Mötet är positivt till att vara med som en hub. Fredrik kommer kontakta tidigare representanter för att höra mer om hur det går till.
+
+\punkt{Rättning av protokoll i GitLab}
+Inga protokoll har rättats sedan flytten till Gitlab. Med anledning av detta håller August i en demonstration för mötet hur rättning går till i GitLab. 
+
+\punkt{Pågående projekt}
+\subpunkt{LEDs i korridor och LED-skylt}
+LUDD:s nya LED-skylt är nu uppsatt. Nuvarande nätaggregat och LED-slinga som används ger inte önskad "fade"-effekt på skylten, varefter en bättre lösning eftertraktas. %Som jag förstod det skulle LED-skylten ha ett API för att medlemmar skulle kunna ändra färg, eller nåt, också.
+
+\subpunkt{Profilering}
+Inget att rapportera. 
+
+\subpunkt{Ny statisk hemsida}
+Inget att rapportera. 
+
+\subpunkt{Övriga projekt}
+\subsubsection{LaTeX-kurs}
+Frida nämner att LaTeX-kursen fortfarande inte har något spikat datum trots att första läsperioden redan har börjat. Mötet diskuterar lämpligt datum för kursen och konstaterar att förra årets LaTeX-kurs, som hölls den 7:e december, hölls alldeles för sent. 
+Första torsdagen under andra läsperioden anses vara ett lämpligt datum, eftersom det redan är väldigt mycket som pågår under första läsperioden. 
+August kontaktar Edvin Åkerfeldt och John Elfberg som höll i förra iterationen av kursen för att se ifall de kan tänka sig hålla i den även i år. 
+
+
+
+\punkt{LUDDHack} 
+Langruppen, tillsammans med XP-el, arrangerar under kommande helg 14-16:e september evenemanget "LUDDHack''. Hela styrelsen utom Frida säger sig ha för avsikt att medverka under evenemanget.
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+\subpunkt{Programmeringsstugor}
+Sedan tidigare har det bestämts att LUDD hålla i programmeringsstugor under torsdagar.  
+Torsdag den 13:e september kommer LUDD ha programmeringsstuga. Samtidigt har datateknik-ettorna labbpass i Python. Fredrik berättar att Johan Jatko har tagit på sig att lägga upp ett Facebookevent i förväg och det föreslås att även posters bör sättas upp i förväg. 
+
+
+
+\end{document}
