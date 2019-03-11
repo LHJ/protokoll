@@ -85,7 +85,7 @@
     \Adjungs(\value{Cadjung})= {#1}
     \setboolean{@adjung}{true}
 }
-
+%asd
 \providecommand{\behorighet}[1]{\gdef\@behorighet{#1}\setboolean{@behorighet}{true}}
 \providecommand{\bild}[1]{\gdef\@bild{#1}\setboolean{@bild}{true}}
 \providecommand{\plats}[1]{\gdef\@plats{#1}}
