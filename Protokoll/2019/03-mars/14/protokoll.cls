@@ -254,8 +254,8 @@
 %% sedan ut sidfoten beroende på om en eller två justeringsmän är
 %% angivna.
 \providecommand{\ps@protokoll}{%
-  \renewcommand{\@oddhead}{\emph{\@organisation\hfill\capthis\@typ\space%
-      \@datum\hfill\thepage (\pageref{LastPage})}}%
+  \renewcommand{\@oddhead}{\emph{\@organisation\hfill Orgnr:~897001-4786\hfill\capthis\@typ\space%
+      \@datum\hfill\thepage (\pageref{LastPage})}}
   \renewcommand{\@evenhead}{\@oddhead}%
   \renewcommand{\@oddfoot}{%
     \chjust\footnotesize\ifthenelse{\boolean{@twojust}}{%
@@ -359,15 +359,10 @@
         \att inadjungera~%
         \addtocounter{Cadjung}{-1}%
         \stepcounter{iAdjung}%
-        \whiledo{\value{iAdjung} < \value{Cadjung}}{%Adjung >= 3
+        \whiledo{\value{iAdjung} < \value{Cadjung}}{%
             \Adjungs(\the\value{iAdjung}),~\stepcounter{iAdjung}%
         }%
-        \ifthenelse{\value{Cadjung} > 0}% Resterande Adjung = 2 
-        {
-            \Adjungs(\the\value{Cadjung})~och\stepcounter{Cadjung}~\Adjungs(\the\value{Cadjung})~med närvarorätt, yttranderätt, förslagsrätt, dock ej rösträtt.
-        }{%else Adjung = 1
-            \Adjungs(\the\value{Cadjung})~med närvarorätt, yttranderätt, förslagsrätt, dock ej rösträtt.
-        }
+        \Adjungs(\the\value{Cadjung})~och\stepcounter{Cadjung}~\Adjungs(\the\value{Cadjung})~med närvarorätt, yttranderätt, förslagsrätt, dock ej rösträtt.
         \end{beslut}
     }
     {Inga adjungeringar.} % else
