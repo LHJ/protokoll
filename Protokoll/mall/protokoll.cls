@@ -68,6 +68,7 @@
 \newboolean{@motesnr}					% Mötesnummer?
 \newboolean{@ordf}						% Ordförande?
 \newboolean{@ordftitel}                 % Ordförande titel?
+\newboolean{@forordf}         % Finns en separat föreningsordförande specad?
 \newboolean{@sekr}
 \newboolean{@sekrtitel}
 \newboolean{@onejust}
@@ -123,7 +124,10 @@
   \setboolean{@onejust}{true}}
 \providecommand{\justB}[2]{\gdef\mjustB{#1}\gdef\mjustBtitel{#2}%
   \setboolean{@twojust}{true}}
-\providecommand{\forordf}[1]{\gdef\fordf{#1}}%
+\providecommand{\forordf}[1]{
+  \gdef\fordf{#1} 
+  \setboolean{@forordf}{true}
+}%pls work
 
 %% Skriv ut variabler
 \providecommand{\skrivforordf}{\fordf\hspace{1 mm}}
@@ -315,6 +319,10 @@
             {\skrivordftitel tillika mötesordförande}
             {Ordförande}
         }
+        \ifthenelse{\boolean{@forordf}}
+          {\moteperson{\skrivforordf}{Föreningsordförande}}
+          {}
+
         \moteperson{\skrivsekr}{\ifthenelse{\boolean{@sekrtitel}}
             {\skrivsekrtitel tillika mötessekreterare}
             {Sekreterare}
@@ -378,7 +386,7 @@
 %% Sist i protokollet ska underskrifterna skrivas ut
 \AtEndDocument{
     \punkt{Mötets högtidliga avslutande}
-    \skrivforordf förklarade mötet avslutat \@stopptid.
+    \skrivordf förklarade mötet avslutat \@stopptid.
     
     %\pagestyle{lastpage}\thispagestyle{protokoll}
   \vspace{2cm}\chordf\chjust\chsekr%
