@@ -378,7 +378,7 @@
 %% Sist i protokollet ska underskrifterna skrivas ut
 \AtEndDocument{
     \punkt{Mötets högtidliga avslutande}
-    \skrivforordf förklarade mötet avslutat \@stopptid.
+    \skrivordf förklarade mötet avslutat \@stopptid.
     
     %\pagestyle{lastpage}\thispagestyle{protokoll}
   \vspace{2cm}\chordf\chjust\chsekr%
