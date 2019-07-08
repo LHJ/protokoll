@@ -16,7 +16,7 @@ fi
 
 year=$(echo $date | cut -f1 -d-)
 day=$(echo $date | cut -f3 -d-)
-dir="$year/$month/$day"
+dir="$year/$month/$day" #if remade as a git submodule might want to redo this
 template="mall"
 
 if [ ! -e $dir ]; then
