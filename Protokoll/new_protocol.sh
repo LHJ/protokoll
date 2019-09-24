@@ -1,7 +1,7 @@
 #!/bin/bash
 origpath=$(pwd)
 
-ordf="August Eriksson"
+ordf="Anton Johansson"
 sekr="Jens Lindholm"
 
 # Choose what date the meeting as being held: eg. 2017-11-30
