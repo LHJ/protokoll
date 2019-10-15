@@ -1,0 +1,62 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{T1}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\date{2019-10-15}  %Datum, form YYYY-MM-DD
+\tid{START}{SLUT}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{Anton Johansson} 	            % Föreningsordförande
+\ordf{Anton Johansson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{namn}{titel} 		% Justerare A      | titel
+\justB{namn}{titel} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{namn}{titel}
+\person{}{}
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+Inga bordlagda ärenden.
+
+\punkt{Uppdateringar av pågående projekt}
+% Vad har föreningen gjort med pågående projekt?
+Inget att tillägga.
+
+\punkt{Punkt i dagordning}
+% Skriv det som är relevant kring punkten.
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+Inga övriga frågor.
+
+
+\end{document}
