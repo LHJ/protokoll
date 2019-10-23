@@ -1,0 +1,310 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{A1545}          % Plats som mötet hålls i
+\typ{Årsmöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2019-03-14}  %Datum, form YYYY-MM-DD
+\tid{18:25}{21:54}   %Tid: {START}{SLUT}.
+\organ{Medlemmarna}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{August Eriksson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Mikael Hedkvist}{Medlem} 		% Justerare A      | titel
+\justB{Viktor Sonesten}{Medlem} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Frida Mikkelä}{Vice Ordförande}
+\person{Emil Kitti}{Huvudsystemansvarig}
+\person{Fredrik Pettersson}{Kassör}
+\person{Edvin Åkerfeldt}{Revisor}
+\person{Edvin Åkerström}{Ledamot}
+\person{Anton Johansson}{Ledamot}
+\person{Lisa Johansson}{Valberedning}
+\person{Oscar Brink}{Valberedning}
+\person{John Elfberg Larsson}{Medlem}
+\person{Aran Nur}{Medlem}
+\person{Louise Sehlstedt}{Medlem}
+\person{Patrick Hjelte}{Medlem}
+\person{Erik Viklund}{Medlem}
+\person{Rickard Åström}{Medlem}
+\person{7 övriga medlemmar.}{}
+% Några fler LUDD gamlingar kom 20:30
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+\subpunkt{Ansvarsfrihet för styrelsen verksamhetsåret 2017/2018}
+De medlemmar av föregående styrelse som var närvarande informerade mötet om att
+de protokoll som tidigare inte varit färdigställda nu är det, och anser därför
+att den styrelsens uppdrag är avklarat. 
+
+Mikael yrkar på att med den information som framförts bör styrelsen beviljas
+den ansvarsfrihet som tidigare nekats. 
+
+\begin{beslut}
+  \att bevilja ansvarsfrihet för styrelsen 2017/2018
+\end{beslut}
+
+\punkt{Rapport från styrelsen}
+Fredrik Pettersson presenterar en rapport för mötet, se bilaga 1.
+
+\punkt{Rapport från revisor}
+Revisor Edvin Åkerfeldt berättar för mötet att han anser att ekonomin verkar
+skötas väl och att kassör gör sitt jobb. 
+
+\punkt{Ekonomisk redovisning}
+Fredrik presenterar LUDDs ekonomi för mötet. Se bilaga 2. 
+
+Lite diverse fel i formatteringen pekas ut och förklaras vara på grund av
+hanteringsfel av Excel. 
+
+Mikael yrkar på att lägga till punkten ``Fastställande av budget och medlemsavgift för nästkommande
+verksamhetsår.'' under punkten ``Ekonomisk redovisning''. 
+\begin{beslut}
+\att lägga till punkten ``Fastställande av budget och medlemsavgift för nästkommande
+verksamhetsår.'' under punkten ``Ekonomisk redovisning''.
+\end{beslut}
+\punkt{Fastställande av budget och medlemsavgift för nästkommande
+verksamhetsår.}
+Fredrik presenterar sitt budgetförslag för verksamhetsåret 2019/2020. Se bilaga
+3.
+
+Förslag på att höja budgetposten ``Datortillbehör'' då den regelbundet
+överstigs inkommer.  
+
+
+Diskussion bryter ut kring huruvida budgetposten förväntas överstigas och ifall
+detta skulle vara ett problem, då en budget är en riktlinje och inte något som
+inte får brytas.  
+
+
+Diskussion kring om någon annan post skulle sänkas för att kompensera för
+eventuell ökning hålls. 
+
+Louise Sehlstedt och Emil Kitti yrkar på att öka budgetposten ``Datortillbehör'' till 
+10000kr och att sänka ``Frakter och Transporter'' med 1000kr och ``Förbrukningsinventarie'' med 2000kr. 
+Styrelsen jämkar sig med yrkandet. 
+\begin{beslut}
+  \att fastställa budget och medlemasavgift enligt styrelsens förslag med det
+  tillagda yrkandet för nästkommande verksamhetsår. 
+\end{beslut}
+
+\punkt{Uppdatering av LUDDs mål och visioner}
+August presenterar den föreslagna uppdateringingen av LUDD:s mål och visioner.
+Se bilaga 4 för git-diff.
+
+Mikael yrkar på att ändra ordet ``stadigt'' på rad 258 i git-diff:en till ordet
+``ökande''. 
+
+Styrelsen jämkar sig med yrkandet. 
+
+
+Mikael yrkar på att behålla punkt 1.10., ``Världens geografiskt största LAN'',
+som hade tagits bort i den föreslagna uppdateringen av mål och visioner. 
+
+Styrelsen jämkar sig med yrkandet. 
+
+\begin{beslut}
+  \att fastställa den föreslagna ändringen till LUDD:s mål och visioner med
+  tillagda yrkanden. 
+\end{beslut}
+
+
+\punkt{Förankring av tills vidare beslutade regler genom medlemsbeslut}
+August presenterar den tillagda regeln \§4.4.6. ``Samtalsklimat''. Se bilaga 5
+för exakt formulering.
+
+\begin{beslut}
+  \att förankra den tillagda regeln \§4.4.6. ``Samtalsklimat.''
+\end{beslut}
+
+\punkt{Behandling motioner och propositioner}
+Inga motioner eller propositioner har inkommit.
+
+\punkt{Val av styrelse}
+\subpunkt{Val av Ordförande}
+Valberedningen nominerar Anton Johansson till Ordförande för verksamhetsåret 2019/2020.
+
+Anton presenterar sig.
+
+\begin{beslut}
+  \att välja Anton Johansson till Ordförande för verksamhetsåret 2019/2020.
+  \begin{itemize}
+    \item[Namn: ] Anton Johansson  
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+\subpunkt{Val av Vice Ordförande}
+Valberedningen nominerar Louise Sehlstedt till Vice Ordförande för verksamhetsåret 2019/2020.
+
+Louise presenterar sig.
+\begin{beslut}
+  \att välja Louise till Vice Ordförande för verksamhetsåret 2019/2020.
+  \begin{itemize}
+    \item[Namn: ] Louise Sehlstedt
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+\subpunkt{Val av Kassör}
+Samuel Gradén nominerar Oscar Brink till Kassör för verksamhetsåret 2019/2020. 
+
+Oscar godtar nomineringen. 
+
+Oscar presenterar sig själv.
+
+\begin{beslut}
+  \att välja Oscar till Kassör för verksamhetsåret 2019/2020.
+  \begin{itemize}
+    \item[Namn: ] Oscar Brink 
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+\subpunkt{Val av Sekreterare}
+Valberedningen nominerar Jens Lindholm till Sekreterare för verksamhetsåret 2019/2020.
+
+Jens Lindholm presenterar sig själv.
+
+John Elfberg Larsson tar rollen som temporär mötessekreterare medan Jens blir
+utfrågad och omröstning sker.
+
+% Jens is a cuckboi that has gone completely mental. Why do you want to be
+% secretary again? Madness! Suck mah dick, you furry degenerate. - John
+% Fuck John lmfao - lh
+
+\begin{beslut}
+  \att välja Jens Lindholm till Sekreterare för verksamhetsåret 2019/2020.
+  \begin{itemize}
+    \item[Namn: ] Jens Lindholm
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+Jens Lindholm tar åter över rollen som mötessekreterare.
+
+\subpunkt{Val av två Ledamöter}
+Valberedningen nominerar Josef Utbult och Samuel Gradén till Ledamöter för 
+verksamhetsåret 2019/2020.
+
+Samuel och Josef presenterar sig själva.
+
+\begin{beslut}
+  \att välja Josef Utbult och Samuel Gradén till Ledamöter för verksamhetsåret
+  2019/2020.
+  \begin{itemize}
+    \item[Namn: ] Josef Utbult
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+  \begin{itemize}
+    \item[Namn: ] Samuel Gradén
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+\subpunkt{Val av Huvudsystemansvarig}
+Valberedningen och rootgruppen nominerar John Elfberg Larsson till
+Huvudsystemansvarig för verksamhetsåret 2019/2020.
+
+\begin{beslut}
+  \att välja John Elfberg Larsson till Huvudsystemansvarig för verksamhetsåret 
+  2019/2020.
+  \begin{itemize}
+    \item[Namn: ] John Elfberg Larsson 
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+\subpunkt{Val av två personer till valberedning, varav en sammankallande}
+Frida nominerar Aran Nur till valberedning samt sammankallande för
+verksamhetsåret 2019/2020. 
+
+Aran godtar nomineringen. 
+
+%Inga fler nomineringar godtas av de nominerade. %eller skriver man inga fler
+%nomineringar inkommer?
+Flera andra nomineringar inkommer, dock inga fler godtas av de nominerade. 
+
+Aran presenterar sig själv. 
+
+\begin{beslut}
+  \att lämna posten vakant. 
+\end{beslut}
+
+\begin{beslut}
+  \att styrelsen åläggs tillsätta valberedning.
+\end{beslut}
+
+\punkt{Övriga val}
+\subpunkt{Val av revisor och suppleant}
+Valberedningen nominerar Edvin Åkerfeldt till revisor för verksamhetsåret 2019/2020.
+
+Frida Mikkelä nominerar Fredrik Pettersson till suppleant. 
+
+Edvin Åkerfeldt nominerar August Eriksson till revisor.
+
+August Eriksson och Fredrik Pettersson godtar nomineringarna, Edvin Åkerfeldt 
+drar tillbaka sin nominering. 
+
+August Eriksson nominerar Edvin Åkerfeldt till temporär mötesordförande. 
+
+Edvin Åkerfeldt godtar nomineringen. 
+
+Mötet väljer Edvin Åkerfeldt till temporär mötesordförande medans August
+utfrågas och omröstning sker. 
+
+\begin{beslut}
+  \att välja August Eriksson och Fredrik Pettersson till revisor respektive suppleant för verksamhetsåret 2019/2020.
+  \begin{itemize}
+    \item[Namn: ] August Eriksson %I wonder if we actually need the ID number
+      %people who aren't part of the board
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+  \begin{itemize}
+    \item[Namn: ] Fredrik Pettersson
+    \item[Personnummer: ] \qquad \qquad \qquad \qquad -- \qquad \qquad
+  \end{itemize}
+\end{beslut}
+
+
+\punkt{Övriga frågor}
+\subpunkt{El i lokalen}
+August framför att root har planer för att ordna den elektriska situationen
+i LUDDs lokal men att kapaciteten inte kommer att öka direkt.
+
+\subpunkt{Skräp på bord}
+Mikael framför att han anser att lokalen och dess bordsytor är nerstökade med 
+diverse teknologiskt skräp i stil av sladdar och kretskort. Han föreslår 
+hyllor, eller liknande för att minska hur skräpigt det är på LUDD.
+
+\subpunkt{Framtiden för Burn-såsen}
+Frida framför att blondie och wimbledon tror att året som kommer troligtvis
+kommer vara det sista de kan medverka och göra sin traditionella, starka 
+Burn-sås för Tacophesten.
+\end{document}
