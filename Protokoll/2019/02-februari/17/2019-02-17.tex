@@ -1,0 +1,86 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{T1}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2019-02-17}  %Datum, form YYYY-MM-DD
+\tid{15:13}{16:15}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{August Eriksson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Edvin Åkerström}{Ledamot} 		% Justerare A      | titel
+\justB{Anton Johansson}{Ledamot} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+%\person{Emil Kitti}{Huvudsystemansvarig}
+\person{Fredrik Pettersson}{Kassör}
+\person{Aran Nur}{Medlem}
+\person{Marcus Eriksson}{Medlem}
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+Inga bordlagda ärenden.
+
+\punkt{Behandling av Roots motion för inköp av grafikkort}
+August presenterar en motion inskickad av Johan Jatko på roots vägnar. Se
+bilaga för motion. 
+\begin{beslut}
+    \att bifalla motionen och allokera 10000kr från budgetposten ''Projekt'' till detta.
+\end{beslut}
+
+\punkt{Diskussion och ev.\ beslut avseende kränkande betéende i LUDD:s lokaler}
+% Skriv det som är relevant kring punkten.
+Styrelsen har fått klagomål att medlemmar begår eventuella brott mot LTU:s 
+beteenderegler, August har föreslagit ett tillägg till ordningsreglerna.  
+
+Diverse tolkningar av LUDD:s och LTU:s regler diskuteras för hur detta tillägg
+ska formuleras. 
+
+\begin{beslut}
+  \att Införa den föreslagna punkten ''\S 4.4.6. Samtalsklimat'' under ''\S
+  4.4. Ordningsregler'' i styrdokumentet. 
+\end{beslut}
+Punkten i sin helhet lyder: 
+''4.4.6. Samtalsklimat
+
+
+Ingen ska känna sig ovälkommen i LUDD:s lokaler och verksamhet, oavsett ursprung, religion och dylikt. Den som uttrycker sig på ett sätt som bryter mot följande samtalsregler riskerar att bli utesluten ur föreningen med omedelbar verkan.
+
+\begin{itemize}
+  \item Man får inte uttala sig på ett sätt som medvetet upplevs kränkande av andra medlemmar i föreningen.
+  \item Medlemmar ska i LUDD:s lokaler bete sig i enlighet med LTUs regler, bland annat https://www.ltu.se/student/Planera/Mina-rattigheter-och-skyldigheter/Likabehandling-for-studenter-1.7749''
+\end{itemize}
+
+\punkt{Övriga ärenden}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+Inga övriga ärenden.
+
+\end{document}
