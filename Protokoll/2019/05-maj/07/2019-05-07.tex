@@ -1,0 +1,169 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{A3024}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2019-05-07}  %Datum, form YYYY-MM-DD
+\tid{16:37}{17:57}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+\forordf{August Eriksson} 	            % Föreningsordförande
+\ordf{Anton Johansson}[Ledamot]%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Oscar Brink}{Medlem} 		% Justerare A      | titel
+\justB{Samuel Gradén}{Medlem} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Emil Kitti}{Huvudsystemansvarig}
+\person{Edvin Åkerström}{Ledamot}
+
+\person{Louise Sehlstedt}{Medlem}
+%\person{}{}
+%\person{}{}
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut med tillägg av punkten
+     ''Diskussion kring ställningstaganden för LTU:s riktlinjer kring
+     akademiska studier'' efter \S 8.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+Inga bordlagda ärenden.
+
+\punkt{Uppdateringar av pågående projekt}
+\subpunkt{LUDD-tröjor, LUDD-banner}
+Inget att uppdatera. 
+
+\subpunkt{Koldioxidsensor}
+Edvin framför att det planeras arbetas mer på projektet under sommaren som
+följer. 
+
+\subpunkt{Övriga projekt}
+Inga övriga projekt. 
+
+\punkt{Återställande av styrdokument, uppdaterade stadgar och övrig
+dokumentation som förlorats i samband med intrång på LUDDs Gitlab-server}
+Efter att ett administratörskonto blev hackat och alla projekt under ''ludd''-
+och ''styrelse''-grupperna blivit borttagna från LUDD:s GitLab server har bland
+annat ''LUDD:s samlade styrdokument''- och ''protokoll''-repot
+
+August och Jens är tillsammans ansvariga för att återställa ''LUDD:s samlade 
+styrdokument'' och Jens för att återställa ''protokoll'' så gott som det går. 
+
+root-gruppen är ansvariga för att informera medlemmarna om säkerhetsintrånget
+och vilka åtgärder som följer.
+
+\punkt{Införande av pris på LUDDs kaffe}
+ \subpunkt{Diskussion huruvida kaffe inte längre bör vara gratis}
+ Diskussion kring ifall det är nödvändigt eller fördelaktigt att börja ta
+ betalt för kaffe från LUDD:s kaffemaskin förs. 
+
+
+ Mötet är ense om att kaffe bör kosta en symbolisk summa, delvis för att täcka
+ kostnader och delvis för att uppmuntra till användning av Bosch. 
+
+
+Mötet beslutar att preliminärt sätta priset per kopp till 473 Boschmoney,
+motsvarande 47,3 öre.
+ \subpunkt{Diskussion kring pågående projekt att sammankoppla kaffemaskin med
+ Bosch}
+ Systemet har karaktäriserats men en hel del arbete krävs för att det ska kunna
+ genomföras, så även utrustning.
+ \subpunkt{Beslut att avsätta 700 SEK från projektbudget för inköp av materiell
+ för att sammankoppla kaffemaskin med Bosch-system} 
+\begin{beslut}
+  \att avsätta 700kr från projektbudgeten till utrustning för att sammankoppla
+  kaffemaskinen och Bosch.
+\end{beslut}
+\punkt{Blivande styrelsens planering och förberedelse inför starten på
+nästa verksamhetsår}
+Blivande styrelsen har en inplanerad gemenskapsdag under söndagen som följer,
+12/5, under vilken planer för verksamhetsåret kommer diskuteras. 
+
+I och med brädspelsföreningen BoardGameDungeon:s upplösande kommer mest troligt 
+inte Spelkvällen, som tidigare hållits i under Nolleperioden tillsammans med 
+LUDD, hållas i på samma sätt som tidigare. Nolleperioden har inte kontaktat
+LUDD med någon information inför höstens Nolleperiod.
+
+
+\punkt{Diskussion gällande förslag att införa ett s.k. ''bounty system''}
+Samuel framför att Neava uttryckte intresse för att LUDD:s medlemmar skulle
+kunna få arbeta på mindre projekt på beställning åt Neava. Mötet ser positivt
+till att agera mellanhand och fostra relationer mellan LUDD, dess medlemmar och
+intresserade företag. 
+
+Mötet förväntas diskutera och framföra idéer kring anknytningar till
+arbetslivet under ett diskutionsmöte på måndagen som följer, 13/5.
+
+\punkt{Diskussion kring ställningstaganden för LTU:s riktlinjer kring 
+akademiska studier}
+Efter att en medlem har begärt svar till inlämningsuppgifter i LUDD:s
+Telegram-chatt i utbyte mot betalning har huruvida detta ska betraktas som
+försök till fusk samt ifall detta skulle vara grund till uteslutning från
+föreningen diskuterats i och utanför samma chatt. 
+
+Mötet är enigt om att detta inte är tillräckligt för att motivera uteslutning
+och att det, efter diskussion med medlemmen i fråga, har framgått att det
+huvudsakligen var en fråga om formulering.
+
+\punkt{Ogiltigförklaring av styrelsemöte med tillhörande beslut 2019-04-30}
+\begin{beslut}
+  \att ogiltigförklara mötet från den 30:e april.
+\end{beslut}
+\punkt{Förstärkande av per capsulam-beslut att avsätta 3000 SEK till
+elektriker}
+Denna punkt existerar för att förankra per capsulam-beslutet. 
+
+Ingen styrelsemedlem motsatte sig beslutet när det togs.
+
+\punkt{Beslut gällande Roots motion att avsätta 16 000 SEK för elinstallation}
+I och med att det tidigare mötet, vilket var extrainkallat för att ta beslut
+för denna punkt, har ogiltigförklarats tas beslutet igen. 
+\begin{beslut}
+  \att avsätta 16 000 SEK från lokalbudgeten för elinstallation.
+\end{beslut}
+
+\punkt{Beslut gällande inköp av högtalare och mixerbord för 3000 SEK}
+Ett set med två högtalare och ett mixerbord har köpts in.  
+Diskussion kring ifall LUDD skulle ha användning för utrustningen förs. 
+\begin{beslut}
+  \att avsätta 3000 SEK från lokalbudgeten för inköp av högtalare och
+  mixerbord. 
+\end{beslut}
+
+\punkt{Beslut gällande inköp av fortbildningsmaterial för framtida styrelser
+för 660 SEK}
+
+\begin{beslut}
+  \att avsätta 660 SEK från budgetposten ''utbildning'' för inköp av
+  fortildningsmaterial.
+\end{beslut}
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+Inga övriga frågor.
+
+
+\end{document}
