@@ -1,0 +1,160 @@
+\documentclass{protokoll}
+
+\usepackage[utf8]{inputenc}
+
+\bild{logo.pdf}     % Ändra om man vill ha en annan bild på framsidan.
+\plats{A2019}          % Plats som mötet hålls i
+\typ{Styrelsemöte}  %Typ av möte: Styrelsemöte|Årsmöte|medlemsmöte etc.
+\datum{2019-09-01}  %Datum, form YYYY-MM-DD
+\tid{11:02}{13:23}   %Tid: {START}{SLUT}.
+\organ{Styrelsen}   %Det organ som har hand om mötet: Styrelsen|Mötet|Medlemmarna
+\organisation{Luleå Universitets Datorförening}
+%\forordf{Anton Johansson} 	            % Föreningsordförande
+\ordf{Anton Johansson}%[titel] 	    % Mötesordförande  | (titel)
+\sekr{Jens Lindholm}%[titel] 		% Mötessekreterare | (titel)
+\justA{Louise Sehlstedt}{Vice Ordförande} 		% Justerare A      | titel
+\justB{Oscar Brink}{Kassör} 		% Justerare B      | titel
+
+% Lista över övriga personer som närvarade vid mötet.
+% Om det anses för många vid ett möte skriv: \person{<ANTAL> övriga medlemmar.}{}
+\person{Josef Utbult}{Ledamot}
+\person{Samuel Gradén}{Ledamot}
+
+%\adjung{} % Adjungerad person
+%\adjung{} % Nästa adjungerade person
+%\behorighet{Trump} % Om mötet är obehörigt, inkludera denna rad med anledning(-arna).
+
+\begin{document}
+% Punkter som hanteras automagiskt:
+% Mötets högtidliga öppnande - när mötet öppnats
+% Formalia
+%       Val av mötesordförande - den som valdes tills mötesordförande
+%       Val av mötessekreterare - den som valdes till mötessekreterare (alltså du)
+%       Val avtvå justeringspersoner tillika rösträknare - de som valdes till protokolljusterare
+%       Mötets behöriga utlysande - om mötet är behörigt är denna automagisk annars använd \behorighet
+%       (Eventuella adjungeringar) - en samling av de som inadjungerats; kontrolleras via \adjung kommadot
+% Mötets högtidliga avslutande - när mötet avslutats
+\newpage  
+
+
+\punkt{Godkännande av dagordning}
+% Skriv eventuella ändringar i dagordningen och ändra beslutet.
+\begin{beslut}
+     \att fastslå dagordningen som skickats ut med tillägg av punkten ''Övriga
+     frågor''.
+\end{beslut}
+
+\punkt{Bordlagda ärenden}
+% Har det bordlagts ärenden från förra mötet?
+Inga bordlagda ärenden.
+
+\punkt{Utvärdera nolle-p}
+Konsensus är att nolle-p har gått tillräckligt bra. De saker som anses fungerat
+mindre bra har varit allmänt delande av information mellan styrelsemedlemmarna 
+som skickats ut till enbart delar av styrelsen. 
+
+Planering inför och marknadsföring av event som hölls på nolle-p bedöms ha
+varit otillräcklig delvis på grund av tidsbrist inför och under nolle-p. 
+
+
+18 nya medlemmar har registrerats sedan början av nolleperioden. 
+
+
+Att färre rekryterades denna nolleperiod jämfört med tidigare år bedöms vara
+till stor del på grund av att de förmåner som inte var datorrelaterade, kaffe,
+utskrifter och studieytor, medvetet inte gjordes reklam för. 
+Även att LUDD inte medverkade på sektionsdagen samt att spelkvällen som hölls 
+i var mindre och att LUDD inte tilläts göra aktiv reklam på denna tros ha
+påverkat antalet nya medlemmar. 
+
+
+Anton och Josef ska ta kontakt med Datasektionen för att hålla ett möte
+angående utvärdering av spelkvällen. 
+
+
+\punkt{Införande av pris på LUDD:s kaffe}
+\subpunkt{Ta upp det på medlemsmöte}
+Förra styrelsen höll diskussion att införa ett symboliskt pris för kaffe på 
+LUDD, vilken skulle täcka delar av utgifterna för kaffe samt ge statistik över
+konsumtion.
+
+
+Ett Eventuellt införande av detta planeras att tas upp på nästa medlemsmöte. 
+
+\punkt{Kurser under läsåret.}
+\subpunkt{Git- och LaTeX-kurs}
+Git-kursen har planerats in att hållas på Torsdag 12:e September, klockan 
+18:00, av Anders ''ankan'' Engström. A1545 har bokats för kursen. 
+
+
+LaTeX-kursen planeras hållas på Torsdag 19:e September, klockan 18:00, av Jens
+''lh'' Lindholm. John ''curious'' Elfberg Larsson ska kontaktas och förfrågas
+ifall denne kan tänkas hålla i labbdelen av kursen. A3019 planeras bokas för
+kursen. 
+
+
+Oscar Brink tar på sig ansvar att designa posters för LaTeX-kursen och
+Git-kursen, samt skapa Facebookevent för Git-kursen. 
+
+
+Josef Utbult tar på sig att skapa ett Facebookevent för LaTeX-kursen.
+
+
+Anton Johansson tar på sig att kontakta Teknologkåren för marknadsföring.
+\subpunkt{C++ kurs}
+Anton Johansson har skickat mail till Fredrik Bengtsson för att få förslag på
+föreläsare men inte fått svar, Anton tar på sig att kontakta Fredrik i person.
+
+
+Oscar Brink tar på sig att kontakta Per Lindgren för att få förslag på
+föreläsare. 
+
+\punkt{Valberedningen}
+LUDD står utan valberedning, styrelsen har fått ansvaret att tillsätta två
+valberedande. 
+
+
+Lisa Jonsson har uttryckt att hon kan tänka sig vara del av valberedningen
+även detta år, beroende på vem som också skulle vara med i valberedningen. 
+
+\punkt{Återställning av protokoll + docs}
+Efter intrånget och utplånandet av LUDD:s GitLab kraschade storageklustret under
+en uppdatering, vilken tog bort alla förändringar som hade gjorts efter
+återställningen. Alla protokoll som inte är utskrivna och påskrivna finns som
+källkod, för LUDD:s samlade styrdokument finns de senaste förändringarna i två
+olika lokala repon som ska merge:as ihop. 
+
+
+Jens Lindholm tar på sig ansvaret för att dessa ska återställas till så nära
+som går deras ursprungliga status. 
+
+\punkt{Kolla vad som ska utföras inför/under medlemsmötet så vi är väl 
+förberedda}
+Louise Sehlstedt presenterar och förklarar vad som måste göras under
+medlemsmötet som ska hållas under läsperiod 1. 
+
+\begin{beslut}
+  \att det första medlemsmötet ska hållas torsdag den 10:e Oktober klockan
+  18:00.
+\end{beslut}
+\punkt{Planering och marknadsföring för torsdagshack}
+Passande nivå på reklam för Torsdagshack diskuteras och föreslås vara posters 
+på LUDD och antingen återkommande events eller regelbundna inlägg på väggen. 
+
+
+%Skriva ut posters för både LUDD:s lokal och omkring LTU under tidiga läsperiod
+%1, samt regelbundna inlägg på LUDD:s vägg. 
+\punkt{Mål och visioner}
+\subpunkt{Vad är mål och visionerna}
+Louise presenterar LUDD:s Mål och Visioner samt den nuvarande verksamhetsplanen.  
+
+\subpunkt{Hur ska vi göra för att uppnå mål och visionerna}
+Styrelsen har tagit fram en preliminär verksamhetsplan som kommer arbetas med
+från och med detta möte. Den färdiga verksamhetsplanen kommer presenteras till
+medlemmarna under medlemsmötet. 
+
+\punkt{Övriga frågor}
+% Icke beslutsfattande frågor och funderingar kring föreningen.
+Inga övriga frågor.
+
+\end{document}
